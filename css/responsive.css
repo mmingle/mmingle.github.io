@@ -396,5 +396,9 @@ border-bottom:none;
 }
 .slider-btn1{
 	display:none !important;
+
+}
+.contact6-information p{
+	width:100%;
 }
 }

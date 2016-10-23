@@ -26,6 +26,9 @@
           height: auto;
           width: 100%;
         }
+        .maps iframe{
+          pointer-events: none;
+        }
 
     </style>
 <body>
@@ -337,9 +340,9 @@ please contact us to discuss the opportunity.
         
         </div><!-- /.item -->
        
-        <div class="item clearfix">
+        <div class="item clearfix maps">
             
-               
+              
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225597.82049825517!2d-82.4313911828411!3d27.9336892295188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2cdbd74c693c3%3A0x4421c7c84d277ba3!2s910+Valmar+St%2C+Brandon%2C+FL+33511!5e0!3m2!1sen!2sus!4v1477233744189" style="border:0;width:100%;height:300px;"></iframe>
                     
                    
@@ -403,6 +406,11 @@ please contact us to discuss the opportunity.
         $('.bxslider').bxSlider({
           adaptiveHeight: true,
         });     
+
+
+        $('.maps').click(function () {
+    $('.maps iframe').css("pointer-events", "auto");
+});
     
  }); 
     </script>
